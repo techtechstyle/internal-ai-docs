@@ -21,7 +21,7 @@ freshness-class: S
 | Pro | 個人・有料 | 利用可 | なし(本人が自己管理) |
 | Max(5x / 20x) | 個人・有料 | 利用可 | なし(本人が自己管理) |
 | Team | 法人 | 全シートで利用可 | シート管理・支出上限・利用分析 |
-| Enterprise | 法人 | 全シートで利用可 | Team の機能に加え SSO・SCIM・監査 API |
+| Enterprise | 法人 | 全シートで利用可 | Team の機能に加え [SSO](../glossary.md#sso-scim)・[SCIM](../glossary.md#sso-scim)・監査 API |
 
 Max(5x / 20x)は、Pro の5倍または20倍の使用量です。機能は Pro と同じです。Premium シートは、Team の中でも使用量が大きいシートです。
 
@@ -29,7 +29,7 @@ Max(5x / 20x)は、Pro の5倍または20倍の使用量です。機能は Pro �
 
 | プラン | 位置づけ |
 | --- | --- |
-| Free | 業務利用は不可(Claude Code が使えないため) |
+| Free | 業務利用は不可([Claude Code](../glossary.md#claude-code) が使えないため) |
 | Pro | 少人数での試行フェーズの入口 |
 | Max | Pro の上限に頻繁に達するメンバー向け |
 | Team | チーム正式導入時の第一候補(最低5シートから) |
@@ -44,7 +44,7 @@ Max(5x / 20x)は、Pro の5倍または20倍の使用量です。機能は Pro �
 
 ## CI用アクセストークンの有効期限管理
 
-CI(自動テスト環境)用のアクセストークンは、`claude setup-token` で発行します。有効期限は1年です。更新時期は、総務のライセンス台帳で管理します。期限切れによる自動処理の停止を防ぐためです。
+[CI](../glossary.md#ci-github-actions)(自動テスト環境)用のアクセス[トークン](../glossary.md#トークン)は、`claude setup-token` で発行します。有効期限は1年です。更新時期は、総務のライセンス台帳で管理します。期限切れによる自動処理の停止を防ぐためです。
 
 ## 関連情報
 

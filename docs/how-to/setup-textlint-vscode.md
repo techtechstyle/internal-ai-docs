@@ -19,7 +19,7 @@ freshness-class: S
 
 **必要なもの**
 
-- このリポジトリを clone した VS Code のワークスペース
+- この[リポジトリ](../glossary.md#リポジトリ)を clone した VS Code のワークスペース
 - Node.js(`npm` が使える環境)
 
 **前提知識**
