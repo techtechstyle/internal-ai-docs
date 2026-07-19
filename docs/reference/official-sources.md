@@ -21,14 +21,14 @@ freshness-class: S
 | 7つの指示手法 | [Steering Claude Code(2026年6月)](https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more) |
 | CLAUDE.md / メモリ | [Memory](https://code.claude.com/docs/en/memory) / [Using CLAUDE.md files](https://claude.com/blog/using-claude-md-files) |
 | スキル | [Skills](https://code.claude.com/docs/en/skills) / [Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) |
-| プラグイン | [Plugins](https://code.claude.com/docs/en/plugins) / [Plugin marketplaces](https://code.claude.com/docs/en/plugin-marketplaces) |
-| サブエージェント | [Subagents](https://code.claude.com/docs/en/sub-agents) |
+| [プラグイン](../glossary.md#プラグイン-マーケットプレイス) | [Plugins](https://code.claude.com/docs/en/plugins) / [Plugin marketplaces](https://code.claude.com/docs/en/plugin-marketplaces) |
+| [サブエージェント](../glossary.md#サブエージェント) | [Subagents](https://code.claude.com/docs/en/sub-agents) |
 | MCP 連携 | [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp) |
 | 設定・権限・セキュリティ | [Settings](https://code.claude.com/docs/en/settings) / [Permissions](https://code.claude.com/docs/en/permissions) / [Security](https://code.claude.com/docs/en/security) / [Server-managed settings](https://code.claude.com/docs/en/server-managed-settings) |
 | サンドボックス | [Sandboxing](https://code.claude.com/docs/en/sandboxing) / [エンジニアリングブログ](https://www.anthropic.com/engineering/claude-code-sandboxing) |
 | モデルとエフォート | [Choosing a model and effort level(2026年7月)](https://claude.com/blog/claude-model-and-effort-level-in-claude-code) |
 | 未知の発見(上級) | [A field guide: Finding your unknowns(2026年7月)](https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns) |
-| CI / GitHub Actions | [GitHub Actions](https://code.claude.com/docs/en/github-actions) / [Headless mode](https://code.claude.com/docs/en/headless) |
+| [CI / GitHub Actions](../glossary.md#ci-github-actions) | [GitHub Actions](https://code.claude.com/docs/en/github-actions) / [Headless mode](https://code.claude.com/docs/en/headless) |
 | 計測・管理 | [Analytics](https://code.claude.com/docs/en/analytics) / [Monitoring usage](https://code.claude.com/docs/en/monitoring-usage) / [IAM](https://code.claude.com/docs/en/iam) |
 | Anthropic 社内の活用事例 | [How Anthropic teams use Claude Code(PDF)](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf) |
 

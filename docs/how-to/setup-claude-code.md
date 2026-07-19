@@ -13,13 +13,13 @@ freshness-class: S
 
 `🔵 SE` `⏱ 20分`
 
-この手順では、チーム標準の Claude Code 環境を自分の PC に構築し、安全な状態で使い始められるようにします。
+この手順では、チーム標準の [Claude Code](../glossary.md#claude-code) 環境を自分の PC に構築し、安全な状態で使い始められるようにします。
 
 ## はじめる前に
 
 **必要なもの**
 
-- チームの GitHub リポジトリへのアクセス権(未付与なら総務へ依頼)
+- チームの GitHub [リポジトリ](../glossary.md#リポジトリ)へのアクセス権(未付与なら総務へ依頼)
 - 会社指定の Claude 有料プランのアカウント(Claude Code が利用可能な Pro 以上。未付与なら総務へ依頼)
 - WSL2(Windows の場合)または macOS / Linux のターミナル。サンドボックス機能は Windows ネイティブでは動作しないため、Windows のかたは必ず WSL2(Ubuntu)上にセットアップしてください
 

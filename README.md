@@ -8,7 +8,7 @@
 | --- | --- |
 | 1. 最小構成(構造・テンプレート・憲章) | ✅ 本リポジトリ |
 | 2. textlint 導入 | ✅ 正式導入済み(2026-07-18)。VS Code 連携+導入研修を整備 |
-| 3. CI・混成読者対応 | 🔶 実装済み・実地確認待ち(2026-07-19)。詳細は下記「フェーズ3」参照 |
+| 3. CI・混成読者対応 | 🔶 CI実地確認済み(2026-07-19)。研修のみ残(詳細は下記「フェーズ3」参照) |
 | 4. 鮮度管理 bot | 未着手 |
 
 フェーズ1の完了条件: ✅ 達成(2026-07-18)。運用マニュアル v1.6 から3本を型分離して移行済み。
@@ -58,16 +58,15 @@
 
 知っておくこと: `textlint-filter-rule-comments` の追加インストールを忘れると、`.textlintrc.json` の `filters.comments` が読み込めず、エラーもなく「No rules found」と表示されて何もチェックされません。`package.json` の devDependencies に含めているため、`npm install` すれば発生しません。
 
-## フェーズ3: CI・混成読者対応(実装済み・実地確認待ち・2026-07-19)
+## フェーズ3: CI・混成読者対応(CI実地確認済み・研修のみ残・2026-07-19)
 
-- `.github/workflows/docs-lint.yml`: docsの変更を含むPRで自動実行するCIです。textlint・frontmatterスキーマ検査・内部リンクチェック(lychee)をします(詳細設計書 §7.4)。
+- `.github/workflows/docs-lint.yml`: docsの変更を含むPRで自動実行するCIです。textlint・frontmatterスキーマ検査・内部リンクチェック(lychee)をします(詳細設計書 §7.4)。GitHubへのpush後、テストPR(用語集リンク追加+.gitattributes追加)でCIが正しく発火することを確認済みです(2026-07-19)。
 - `.github/pull_request_template.md`: docs PR 用チェックリスト(詳細設計書 §7.6)。
 - `scripts/check-frontmatter.js`(`npm run lint:frontmatter`): frontmatterを検査するスクリプトです。4型の全文書について必須キー・audience値・owner・freshness-classとreview-byの整合・ロールバッジ整合を確認します。`npm run lint` でtextlintとまとめて実行されます。
 - ロールバッジ・前提知識ブロック・glossary.md(24語、初版基準の20語を上回る)は既に全文書に適用済みです。運用マニュアル移行の過程で対応し、2026-07-19の通し読みレビューで確認済みです。
 
 **残タスク(人手作業・Hide側)**:
-- 本リポジトリを実際にGitHubへpushし、テスト用PRを1件出してCIが発火することを確認する。
 - 事務メンバー向けのGitHub Web UI編集研修(30分、SG-ADR-000)を実施する。
 
-上記2点が完了した時点で、詳細設計書 第10章のフェーズ3完了条件をすべて満たします。
+この研修が完了した時点で、詳細設計書 第10章のフェーズ3完了条件をすべて満たします。
 

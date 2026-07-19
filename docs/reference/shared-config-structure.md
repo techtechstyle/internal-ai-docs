@@ -11,7 +11,7 @@ freshness-class: S
 
 `🔵 SE`
 
-本書は、チーム共有設定(CLAUDE.md・`.claude/` 一式)のリポジトリ標準構成、CLAUDE.md のメモリ階層、および設定ファイルの優先順位を記載します。対象バージョン: v1.6 由来。
+本書は、チーム共有設定(CLAUDE.md・`.claude/` 一式)の[リポジトリ](../glossary.md#リポジトリ)標準構成、CLAUDE.md のメモリ階層、および設定ファイルの優先順位を記載します。対象バージョン: v1.6 由来。
 
 ## リポジトリの標準構成
 
@@ -28,7 +28,7 @@ our-project/
     └── agents/             # サブエージェント定義
 ```
 
-設定は個人の PC に置かず、リポジトリの `.claude/` ディレクトリに集約します。変更はコードと同じく、プルリクエスト(PR)でレビューします。
+設定は個人の PC に置かず、リポジトリの `.claude/` ディレクトリに集約します。変更はコードと同じく、[プルリクエスト(PR)](../glossary.md#プルリクエストpr)でレビューします。
 
 ## CLAUDE.md のメモリ階層(5層)
 
@@ -64,5 +64,5 @@ CLAUDE.md は複数の場所に置けます。広い範囲のものから順に�
 
 - CLAUDE.md に書く内容の判定基準: [CLAUDE.md 運用ルール一覧](claude-md-rules.md)
 - 権限の deny・allow の書き方: [セキュリティルールと権限ベースライン](security-rules.md)
-- スキル・サブエージェントの使い分けと書式: [スキル・サブエージェントの使い分けと書式](skills-and-subagents.md)
+- スキル・[サブエージェント](../glossary.md#サブエージェント)の使い分けと書式: [スキル・サブエージェントの使い分けと書式](skills-and-subagents.md)
 - 設定をコミットする理由(背景): [解説: Claude Code とは](../explanation/what-is-claude-code.md)
