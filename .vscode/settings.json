@@ -1,0 +1,5 @@
+{
+  "textlint.run": "onType",
+  "textlint.targetPath": "**/*.md",
+  "textlint.languages": ["markdown"]
+}

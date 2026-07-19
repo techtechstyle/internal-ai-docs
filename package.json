@@ -1,0 +1,17 @@
+{
+  "name": "internal-ai-docs",
+  "private": true,
+  "scripts": {
+    "lint:text": "textlint 'docs/**/*.md'",
+    "lint:text:fix": "textlint --fix 'docs/**/*.md'",
+    "lint:frontmatter": "node scripts/check-frontmatter.js",
+    "lint": "npm run lint:text && npm run lint:frontmatter"
+  },
+  "devDependencies": {
+    "textlint": "^15.7.1",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "textlint-rule-prh": "^6.1.0",
+    "textlint-filter-rule-comments": "^1.3.0",
+    "js-yaml": "^4.3.0"
+  }
+}

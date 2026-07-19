@@ -1,0 +1,29 @@
+name: docs-lint
+on:
+  pull_request:
+    paths:
+      - "docs/**/*.md"
+      - "ROADMAP.md"
+      - "package.json"
+      - "scripts/**"
+jobs:
+  textlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      # npm run lint = textlint (lint:text) + frontmatterスキーマ検査 (lint:frontmatter)
+      # 現時点では両方とも error のみ(warning でブロックしない、の運用はフェーズ3時点では
+      # 該当ルールが無いため未設定。該当ルールを追加する際に severity 設定を見直すこと)。
+      - run: npm run lint
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check internal links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline "docs/**/*.md"

@@ -1,0 +1,81 @@
+# 社内 AI 用語辞書 (詳細設計書 §5.2)
+# 追加基準: レビューで同じ表記指摘が3回出たら登録する。
+# 「文書内でどちらかに統一」「初出のみ併記可」の語は機械化できないため
+# 末尾のコメント欄に記載し、人間レビュー時の参照とする。
+version: 1
+rules:
+  - expected: Claude Code
+    patterns:
+      - claude code
+      - ClaudeCode
+      - クロードコード
+    specs:
+      - from: claude codeを起動します
+        to: Claude Codeを起動します
+  - expected: Claude
+    pattern: /クロード(?!コード|・)/
+  - expected: 生成 AI
+    patterns:
+      - 生成系AI
+      - ジェネレーティブAI
+      - GenAI
+    specs:
+      - from: 生成系AIの活用
+        to: 生成 AIの活用
+  - expected: LLM
+    pattern: llm
+  - expected: プロンプト
+    pattern: プロンプト文
+  - expected: コンテキストウィンドウ
+    patterns:
+      - コンテキスト・ウインドウ
+      - コンテキストウインドウ
+  - expected: ハルシネーション
+    pattern: hallucination
+  - expected: ファインチューニング
+    pattern: /fine-?tuning/
+  - expected: RAG
+    patterns:
+      - Rag
+      - rag
+  - expected: MCP
+    pattern: mcp
+  - expected: CLAUDE.md
+    patterns:
+      - claude.md
+      - Claude.md
+    specs:
+      - from: claude.mdに追記します
+        to: CLAUDE.mdに追記します
+  - expected: リポジトリ
+    pattern: レポジトリ
+    specs:
+      - from: レポジトリを作成します
+        to: リポジトリを作成します
+  - expected: プルリクエスト
+    pattern: /プルリク(?!エスト)/
+  - expected: ワークフロー
+    patterns:
+      - ワークフロウ
+      - /work ?flow/
+  - expected: ハンズオン
+    patterns:
+      - ハンズ・オン
+      - /hands-?on/
+  - expected: トークン
+    pattern: token数
+  - expected: エージェント
+    pattern: agent機能
+  - expected: スキル
+    pattern: Skill機能
+  - expected: レビュー
+    pattern: レヴュー
+  - expected: ナレッジ
+    pattern: ノウレッジ
+# --- 機械化できない統一方針(人間レビュー・執筆時の参照) ---
+# エージェント / AIエージェント : 文書内でどちらかに統一
+# ナレッジ / ナレッジベース     : 文書内でどちらかに統一
+# LLM(大規模言語モデル)         : 初出のみ日本語併記可
+# RAG(検索拡張生成)             : 初出のみ日本語併記可
+# MCP(Model Context Protocol)   : 初出のみ英語正式名併記可
+# PR / プルリクエスト           : 初出で「プルリクエスト(PR)」、以降 PR 可

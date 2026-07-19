@@ -1,0 +1,40 @@
+{
+  "rules": {
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 90
+      },
+      "max-ten": {
+        "max": 3
+      },
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "",
+        "preferInBody": "ですます",
+        "preferInList": "",
+        "strict": false
+      },
+      "ja-no-weak-phrase": true,
+      "ja-no-redundant-expression": true,
+      "no-double-negative-ja": true,
+      "no-doubled-joshi": {
+        "min_interval": 1
+      },
+      "no-exclamation-question-mark": false,
+      "max-kanji-continuous-len": {
+        "max": 6,
+        "allow": [
+          "社内技術文書",
+          "認知的負荷理論"
+        ]
+      }
+    },
+    "prh": {
+      "rulePaths": [
+        "./docs/_style/prh-ai-terms.yml"
+      ]
+    }
+  },
+  "filters": {
+    "comments": true
+  }
+}

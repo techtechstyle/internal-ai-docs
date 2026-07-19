@@ -1,0 +1,5 @@
+# ルール文書は NG 例を意図的に引用するため lint 対象外(詳細設計書 §7.1)
+docs/_style/style-guide.md
+docs/_style/writing-charter.md
+# テンプレートはプレースホルダーを含む足場のため lint 対象外
+docs/_templates/**
