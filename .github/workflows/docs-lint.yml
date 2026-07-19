@@ -26,4 +26,5 @@ jobs:
       - name: Check internal links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --offline "docs/**/*.md"
+          # docs/_templates はプレースホルダーを含む足場のため除外(.textlintignore と同じ理由)
+          args: --offline --exclude-path docs/_templates "docs/**/*.md"
